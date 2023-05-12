@@ -8,62 +8,100 @@ trait SharepointSettings
   extends StObject
      with Entity {
   
+  // Collection of trusted domain GUIDs for the OneDrive sync app.
   var allowedDomainGuidsForSyncApp: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
+  // Collection of managed paths available for site creation. Read-only.
   var availableManagedPathsForSiteCreation: js.UndefOr[js.Array[String]] = js.undefined
   
+  // The number of days for preserving a deleted user's OneDrive.
   var deletedUserPersonalSiteRetentionPeriodInDays: js.UndefOr[NullableOption[Double]] = js.undefined
   
+  // Collection of file extensions not uploaded by the OneDrive sync app.
   var excludedFileExtensionsForSyncApp: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
+  // Specifies the idle session sign-out policies for the tenant.
   var idleSessionSignOut: js.UndefOr[NullableOption[IdleSessionSignOut]] = js.undefined
   
+  // Specifies the image tagging option for the tenant. Possible values are: disabled, basic, enhanced.
   var imageTaggingOption: js.UndefOr[NullableOption[ImageTaggingChoice]] = js.undefined
   
+  // Indicates whether comments are allowed on modern site pages in SharePoint.
   var isCommentingOnSitePagesEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
+  // Indicates whether push notifications are enabled for OneDrive events.
   var isFileActivityNotificationEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
+  // Indicates whether legacy authentication protocols are enabled for the tenant.
   var isLegacyAuthProtocolsEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
+  // Indicates whether if Fluid Framework is allowed on SharePoint sites.
   var isLoopEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
+  // Indicates whether files can be synced using the OneDrive sync app for Mac.
   var isMacSyncAppEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
+  // Indicates whether guests must sign in using the same account to which sharing invitations are sent.
   var isRequireAcceptingUserToMatchInvitedUserEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
+  // Indicates whether guests are allowed to reshare files, folders, and sites they don't own.
   var isResharingByExternalUsersEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
+  // Indicates whether mobile push notifications are enabled for SharePoint.
   var isSharePointMobileNotificationEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
+  // Indicates whether the newsfeed is allowed on the modern site pages in SharePoint.
   var isSharePointNewsfeedEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
+  // Indicates whether users are allowed to create sites.
   var isSiteCreationEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
+  // Indicates whether the UI commands for creating sites are shown.
   var isSiteCreationUIEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
+  // Indicates whether creating new modern pages is allowed on SharePoint sites.
   var isSitePagesCreationEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
+  // Indicates whether site storage space is automatically managed or if specific storage limits are set per site.
   var isSitesStorageLimitAutomatic: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
+  // Indicates whether the sync button in OneDrive is hidden.
   var isSyncButtonHiddenOnPersonalSite: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
+  // Indicates whether users are allowed to sync files only on PCs joined to specific domains.
   var isUnmanagedSyncAppForTenantRestricted: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
+  /**
+    * The default OneDrive storage limit for all new and existing users who are assigned a qualifying license. Measured in
+    * megabytes (MB).
+    */
   var personalSiteDefaultStorageLimitInMB: js.UndefOr[NullableOption[Double]] = js.undefined
   
+  // Collection of email domains that are allowed for sharing outside the organization.
   var sharingAllowedDomainList: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
+  // Collection of email domains that are blocked for sharing outside the organization.
   var sharingBlockedDomainList: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
+  /**
+    * Sharing capability for the tenant. Possible values are: disabled, externalUserSharingOnly, externalUserAndGuestSharing,
+    * existingExternalUserSharingOnly.
+    */
   var sharingCapability: js.UndefOr[NullableOption[SharingCapabilities]] = js.undefined
   
+  // Specifies the external sharing mode for domains. Possible values are: none, allowList, blockList.
   var sharingDomainRestrictionMode: js.UndefOr[NullableOption[SharingDomainRestrictionMode]] = js.undefined
   
+  // The value of the team site managed path. This is the path under which new team sites will be created.
   var siteCreationDefaultManagedPath: js.UndefOr[String] = js.undefined
   
+  // The default storage quota for a new site upon creation. Measured in megabytes (MB).
   var siteCreationDefaultStorageLimitInMB: js.UndefOr[NullableOption[Double]] = js.undefined
   
+  /**
+    * The default timezone of a tenant for newly created sites. For a list of possible values, see
+    * SPRegionalSettings.TimeZones property.
+    */
   var tenantDefaultTimezone: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object SharepointSettings {

@@ -7383,6 +7383,7 @@
 | 0.5649572777593966 | [styletron-standard](./s/styletron-standard) | Standard interfaces for Styletron
 | 0.5649255810945488 | [qrcode-generator](./q/qrcode-generator) | QR Code Generator implementation in JavaScript.
 | 0.5649102788916088 | [hermes-profile-transforme](./h/hermes-profile-transformer) | The Hermes runtime, used by React Native for Andro
+| 0.5649086515565599 | [socketcluster-client](./s/socketcluster-client) | SocketCluster JavaScript client
 | 0.5649070342625453 | [node-windows](./n/node-windows) | Support for Windows services, event logging, UAC, 
 | 0.5648793272291952 | [object-diff](./o/object-diff) | Get the diff from objectA to objectB
 | 0.5648607262379741 | [bayes-classifier](./b/bayes-classifier) | Naive Bayes classifier
@@ -8299,6 +8300,7 @@
 | 0.5125474192662031 | [protoo-server](./p/protoo-server) | protoo Node.js server module
 | 0.5125177055839564 | [friendly-errors-webpack-p](./f/friendly-errors-webpack-plugin) | Recognizes certain classes of webpack errors and c
 | 0.5125025740669654 | [react-highlight](./r/react-highlight) | React component for syntax highlighting
+| 0.5122503603103694 | [socketcluster](./s/socketcluster) | Highly scalable realtime framework with support fo
 | 0.5122293179455145 | [srtparsejs](./s/srtparsejs) | A javascript srt text parser and player.
 | 0.5121931457564102 | [graphlib-dot](./g/graphlib-dot) | A DOT language parser / writer for graphlib
 | 0.5121926615306799 | [gulp-shell](./g/gulp-shell) | A handy command line interface for gulp
@@ -9447,6 +9449,7 @@
 | 0.428280993962978 | [firebase__analytics](./f/firebase__analytics) | A analytics package for new firebase packages
 | 0.42794642208274203 | [react-hint](./r/react-hint) | Tooltip component for React, Preact, Inferno
 | 0.4279039010411938 | [react-native-app-link](./r/react-native-app-link) | Easily link to other apps with React Native.
+| 0.4278215035579169 | [remotedev-server](./r/remotedev-server) | Run the RemoteDev monitor on your local server.
 | 0.42773874523844563 | [antd-mobile-icons](./a/antd-mobile-icons) | The icon set for antd-mobile.
 | 0.42767373041792234 | [exif](./e/exif) | A node.js library to extract Exif metadata from im
 | 0.4275914281086396 | [vue-barcode-reader](./v/vue-barcode-reader) | Vue barcodes and QR codes scanner
@@ -9905,6 +9908,7 @@
 | 0.3745865481903553 | [react-native-base64](./r/react-native-base64) | Base64 encoding and decoding helping util. Created
 | 0.37452196042163644 | [material__banner](./m/material__banner) | The Material Components Web banner component.
 | 0.37445247357345435 | [natural-sort](./n/natural-sort) | Sorting with support for numbers, dates, unicode a
+| 0.37438395221516724 | [scc-broker-client](./s/scc-broker-client) | Client for SCC - For SocketCluster horizontal scal
 | 0.3743713933722608 | [rx_dot_wamp](./r/rx_dot_wamp) | A wrapper library for the autobahn wamp v1/v2 libr
 | 0.3740807026321362 | [google-fonts](./g/google-fonts) | A small helper library for embedding Google Fonts 
 | 0.3740772504684491 | [coinbase](./c/coinbase) | The Coinbase API for Node.js
@@ -10457,6 +10461,7 @@
 | 0.2600224027503371 | [triangle-wasm](./t/triangle-wasm) | Javascript wrapper around Triangle - A Two-Dimensi
 | 0.2599265870653049 | [raspi-pwm](./r/raspi-pwm) | Provides access to PWM on the Raspberry Pi as part
 | 0.25980207272617445 | [babel-jsx-utils](./b/babel-jsx-utils) | Utilities for working with Babel and JSX
+| 0.25910314314561234 | [sc-hot-reboot](./s/sc-hot-reboot) | Automatically reboot workers when code changes.
 | 0.25898387866676 | [amazon-dax-client](./a/amazon-dax-client) | Amazon DAX Client for JavaScript
 | 0.25898024935316444 | [webix](./w/webix) | Webix UI
 | 0.25887185654653105 | [paho-mqtt](./p/paho-mqtt) | Eclipse Paho JavaScript MQTT client for Browsers
@@ -10538,6 +10543,7 @@
 | 0.2436484533527392 | [cucumber__tag-expressions](./c/cucumber__tag-expressions) | Cucumber Tag Expression parser
 | 0.24359190281812493 | [react-copy-write](./r/react-copy-write) |  react-copy-write
 | 0.2434490919245575 | [firebase__auth-compat](./f/firebase__auth-compat) | FirebaseAuth compatibility package that uses API s
+| 0.2433021419126932 | [sc-broker-cluster](./s/sc-broker-cluster) | Realtime clustering engine
 | 0.24324440707172904 | [rwlock](./r/rwlock) | A read/write lock implementation for Node.
 | 0.2431813621470964 | [firebase__firestore-compa](./f/firebase__firestore-compat) | The Cloud Firestore component of the Firebase JS S
 | 0.24281599652789587 | [is-running](./i/is-running) | Test if a process with a given pid is running

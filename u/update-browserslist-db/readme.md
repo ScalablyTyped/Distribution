@@ -1,7 +1,7 @@
 
 # Scala.js typings for update-browserslist-db
 
-Typings are for version 1.0.9
+Typings are for version 1.0.11
 
 
 

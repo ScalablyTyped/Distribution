@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CrossTenantAccessPolicyConfigurationPartner extends StObject {
   
+  var automaticUserConsentSettings: js.UndefOr[NullableOption[InboundOutboundPolicyConfiguration]] = js.undefined
+  
   /**
     * Defines your partner-specific configuration for users from other organizations accessing your resources via Azure AD
     * B2B collaboration.
@@ -30,6 +32,8 @@ trait CrossTenantAccessPolicyConfigurationPartner extends StObject {
     */
   var b2bDirectConnectOutbound: js.UndefOr[NullableOption[CrossTenantAccessPolicyB2BSetting]] = js.undefined
   
+  var identitySynchronization: js.UndefOr[NullableOption[CrossTenantIdentitySyncPolicyPartner]] = js.undefined
+  
   /**
     * Determines the partner-specific configuration for trusting other Conditional Access claims from external Azure AD
     * organizations.
@@ -51,6 +55,12 @@ object CrossTenantAccessPolicyConfigurationPartner {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: CrossTenantAccessPolicyConfigurationPartner] (val x: Self) extends AnyVal {
+    
+    inline def setAutomaticUserConsentSettings(value: NullableOption[InboundOutboundPolicyConfiguration]): Self = StObject.set(x, "automaticUserConsentSettings", value.asInstanceOf[js.Any])
+    
+    inline def setAutomaticUserConsentSettingsNull: Self = StObject.set(x, "automaticUserConsentSettings", null)
+    
+    inline def setAutomaticUserConsentSettingsUndefined: Self = StObject.set(x, "automaticUserConsentSettings", js.undefined)
     
     inline def setB2bCollaborationInbound(value: NullableOption[CrossTenantAccessPolicyB2BSetting]): Self = StObject.set(x, "b2bCollaborationInbound", value.asInstanceOf[js.Any])
     
@@ -75,6 +85,12 @@ object CrossTenantAccessPolicyConfigurationPartner {
     inline def setB2bDirectConnectOutboundNull: Self = StObject.set(x, "b2bDirectConnectOutbound", null)
     
     inline def setB2bDirectConnectOutboundUndefined: Self = StObject.set(x, "b2bDirectConnectOutbound", js.undefined)
+    
+    inline def setIdentitySynchronization(value: NullableOption[CrossTenantIdentitySyncPolicyPartner]): Self = StObject.set(x, "identitySynchronization", value.asInstanceOf[js.Any])
+    
+    inline def setIdentitySynchronizationNull: Self = StObject.set(x, "identitySynchronization", null)
+    
+    inline def setIdentitySynchronizationUndefined: Self = StObject.set(x, "identitySynchronization", js.undefined)
     
     inline def setInboundTrust(value: NullableOption[CrossTenantAccessPolicyInboundTrust]): Self = StObject.set(x, "inboundTrust", value.asInstanceOf[js.Any])
     

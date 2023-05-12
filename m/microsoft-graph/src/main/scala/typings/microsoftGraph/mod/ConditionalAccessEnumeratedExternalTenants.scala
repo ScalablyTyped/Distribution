@@ -8,6 +8,10 @@ trait ConditionalAccessEnumeratedExternalTenants
   extends StObject
      with ConditionalAccessExternalTenants {
   
+  /**
+    * A collection of tenant IDs that define the scope of a policy targeting conditional access for guests and external
+    * users.
+    */
   var members: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ConditionalAccessEnumeratedExternalTenants {

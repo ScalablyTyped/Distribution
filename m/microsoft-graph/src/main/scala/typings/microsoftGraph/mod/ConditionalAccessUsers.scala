@@ -9,6 +9,7 @@ trait ConditionalAccessUsers extends StObject {
   // Group IDs excluded from scope of policy.
   var excludeGroups: js.UndefOr[js.Array[String]] = js.undefined
   
+  // Internal guests or external users excluded from the policy scope. Optionally populated.
   var excludeGuestsOrExternalUsers: js.UndefOr[NullableOption[ConditionalAccessGuestsOrExternalUsers]] = js.undefined
   
   // Role IDs excluded from scope of policy.
@@ -20,6 +21,7 @@ trait ConditionalAccessUsers extends StObject {
   // Group IDs in scope of policy unless explicitly excluded.
   var includeGroups: js.UndefOr[js.Array[String]] = js.undefined
   
+  // Internal guests or external users included in the policy scope. Optionally populated.
   var includeGuestsOrExternalUsers: js.UndefOr[NullableOption[ConditionalAccessGuestsOrExternalUsers]] = js.undefined
   
   // Role IDs in scope of policy unless explicitly excluded.

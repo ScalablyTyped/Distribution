@@ -6,25 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AccessPackageAssignmentRequestorSettings extends StObject {
   
-  // If false, the requestor is not permitted to include a schedule in their request.
+  // False indicates that the requestor is not permitted to include a schedule in their request.
   var allowCustomAssignmentSchedule: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
-  // If true, allows on-behalf-of requestors to create a request to add access for another principal.
+  // True allows on-behalf-of requestors to create a request to add access for another principal.
   var enableOnBehalfRequestorsToAddAccess: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
-  // If true, allows on-behalf-of requestors to create a request to remove access for another principal.
+  // True allows on-behalf-of requestors to create a request to remove access for another principal.
   var enableOnBehalfRequestorsToRemoveAccess: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
-  // If true, allows on-behalf-of requestors to create a request to update access for another principal.
+  // True allows on-behalf-of requestors to create a request to update access for another principal.
   var enableOnBehalfRequestorsToUpdateAccess: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
-  // If true, allows requestors to create a request to add access for themselves.
+  // True allows requestors to create a request to add access for themselves.
   var enableTargetsToSelfAddAccess: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
-  // If true, allows requestors to create a request to remove their access.
+  // True allows requestors to create a request to remove their access.
   var enableTargetsToSelfRemoveAccess: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
-  // If true, allows requestors to create a request to update their access.
+  // True allows requestors to create a request to update their access.
   var enableTargetsToSelfUpdateAccess: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // The principals who can request on-behalf-of others.

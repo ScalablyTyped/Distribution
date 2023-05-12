@@ -6,8 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ConditionalAccessGuestsOrExternalUsers extends StObject {
   
+  /**
+    * The tenant IDs of the selected types of external users. Either all B2B tenant or a collection of tenant IDs. External
+    * tenants can be specified only when the property guestOrExternalUserTypes is not null or an empty String.
+    */
   var externalTenants: js.UndefOr[NullableOption[ConditionalAccessExternalTenants]] = js.undefined
   
+  /**
+    * Indicates internal guests or external user types. This is a multi-valued property. Possible values are: none,
+    * internalGuest, b2bCollaborationGuest, b2bCollaborationMember, b2bDirectConnectUser, otherExternalUser, serviceProvider,
+    * unknownFutureValue.
+    */
   var guestOrExternalUserTypes: js.UndefOr[ConditionalAccessGuestOrExternalUserTypes] = js.undefined
 }
 object ConditionalAccessGuestsOrExternalUsers {

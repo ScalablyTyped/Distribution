@@ -9641,6 +9641,7 @@
 | [remote-origin-url](./r/remote-origin-url) | Get the git remote origin URL from your local git  | git, git remote, git remote origin, node, node.js, origin, remote, remote origin, remote origin url, url |
 | [remote-redux-devtools](./r/remote-redux-devtools) | Relay Redux actions to remote Redux DevTools. | redux, devtools, flux, react, hot reloading, time travel, live edit |
 | [remotedev-serialize](./r/remotedev-serialize) | Serialize unserializable data and parse it back. | redux, devtools |
+| [remotedev-server](./r/remotedev-server) | Run the RemoteDev monitor on your local server. | devtools, remotedev |
 | [remove-accents](./r/remove-accents) | Converting the accented characters to their corres | accent, accents, remove, diacritic, clean, formatting, umlaut, grave, circumflex, tilde, acute |
 | [remove-file-safe](./r/remove-file-safe) | Remove files without try catch | remove, file, files, safe, without, try, catch, fs-safe, rm, del, delete, trash |
 | [remove-markdown](./r/remove-markdown) | Remove Markdown formatting from text | markdown |
@@ -9950,11 +9951,14 @@
 | [sbd](./s/sbd) | Split text into sentences with Sentence Boundary D | sentence, detection, boundary |
 | [sc-auth](./s/sc-auth) | Auth module for SocketCluster | Auth, SocketCluster, JWT |
 | [sc-broker](./s/sc-broker) | sc-broker key-value and message broker | store, broker, message broker, key value server, session, socketcluster |
+| [sc-broker-cluster](./s/sc-broker-cluster) | Realtime clustering engine | broker, cluster, realtime, socket, engine, socketcluster |
 | [sc-channel](./s/sc-channel) | Channel object for SocketCluster | channel, socketcluster, pubsub, publish, subscribe |
 | [sc-errors](./s/sc-errors) | Error types for use throughout SocketCluster | errors, socketcluster |
+| [sc-hot-reboot](./s/sc-hot-reboot) | Automatically reboot workers when code changes. | socketcluter, reboot, reload, monitor, debugging |
 | [scaleway-functions](./s/scaleway-functions) | - | - |
 | [scalike](./s/scalike) | - | immutable, data, datastructure, functional, collection, stateless, scala, monad, option, maybe, either, future |
 | [scanf](./s/scanf) | C like scanf/sscanf module for node.js. | scanf, sscanf, readSync from stdin, shell input |
+| [scc-broker-client](./s/scc-broker-client) | Client for SCC - For SocketCluster horizontal scal | socketcluster, cluster, scc, client, horizontal, scalability |
 | [schedule](./s/schedule) | Cooperative scheduler for the browser environment. | react |
 | [scheduler](./s/scheduler) | Cooperative scheduler for the browser environment. | react |
 | [schema-registry](./s/schema-registry) | json & avro schema registry | schema, registry, avro, json, rest, kafka, living, version, etl, avsc, ajv, format, type |
@@ -10345,6 +10349,8 @@
 | [socket_dot_io-parser](./s/socket_dot_io-parser) | socket.io protocol parser | - |
 | [socket_dot_io-redis](./s/socket_dot_io-redis) | - | - |
 | [socket_dot_io__component-](./s/socket_dot_io__component-emitter) | Event emitter | - |
+| [socketcluster](./s/socketcluster) | Highly scalable realtime framework with support fo | socketcluster, async, await, realtime |
+| [socketcluster-client](./s/socketcluster-client) | SocketCluster JavaScript client | websocket, realtime, client, socketcluster |
 | [socketcluster-server](./s/socketcluster-server) | Server module for SocketCluster | websocket, realtime, socketcluster |
 | [socketio-jwt](./s/socketio-jwt) | authenticate socket.io connections using JWTs | socket, socket.io, jwt |
 | [socketio-jwt-auth](./s/socketio-jwt-auth) | Socket.io authentication middleware using Json Web | socket.io, socket.io middleware, authenticate, authentication, authorize, authorization, auth, jwt, Json Web Token, Socket.io JWT Auth |
@@ -11398,6 +11404,7 @@
 | [unzipper](./u/unzipper) | Unzip cross-platform streaming API | zip, unzip, zlib, uncompress, archive, stream, extract |
 | [upath](./u/upath) | A proxy to path, replacing \ with / for all result | path, unix, windows, extension, file extension, replace extension, change extension, trim extension, add extension, default extension, UNC paths |
 | [upath2](./u/upath2) | A proxy to path, replacing \ with / for all result | absolute, backslash, check, core, detect, dir, file, filepath, fix, forward, fp, fs, is, is-absolute, isabsolute, normalize, path, paths, sep, shim, slash, slashes, trailing, unix, urix, util, utils, win32, windows |
+| [update-browserslist-db](./u/update-browserslist-db) | - | - |
 | [update-input-width](./u/update-input-width) | A function that given input element, updates its w | input width |
 | [update-notifier](./u/update-notifier) | Update notifications for your CLI app | npm, update, updater, notify, notifier, check, checker, cli, module, package, version |
 | [uploadcare](./u/uploadcare) | Library for uploadcare.com. | upload, uploadcare, api, wrapper |

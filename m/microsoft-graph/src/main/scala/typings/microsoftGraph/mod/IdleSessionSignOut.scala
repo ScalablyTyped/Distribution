@@ -6,10 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IdleSessionSignOut extends StObject {
   
+  // Indicates whether the idle session sign-out policy is enabled.
   var isEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
+  // Number of seconds of inactivity after which a user is signed out.
   var signOutAfterInSeconds: js.UndefOr[NullableOption[Double]] = js.undefined
   
+  // Number of seconds of inactivity after which a user is notified that they'll be signed out.
   var warnAfterInSeconds: js.UndefOr[NullableOption[Double]] = js.undefined
 }
 object IdleSessionSignOut {

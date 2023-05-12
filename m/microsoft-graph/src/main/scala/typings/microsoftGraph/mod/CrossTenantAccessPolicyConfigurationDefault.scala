@@ -8,6 +8,8 @@ trait CrossTenantAccessPolicyConfigurationDefault
   extends StObject
      with Entity {
   
+  var automaticUserConsentSettings: js.UndefOr[NullableOption[InboundOutboundPolicyConfiguration]] = js.undefined
+  
   /**
     * Defines your default configuration for users from other organizations accessing your resources via Azure AD B2B
     * collaboration.
@@ -50,6 +52,12 @@ object CrossTenantAccessPolicyConfigurationDefault {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: CrossTenantAccessPolicyConfigurationDefault] (val x: Self) extends AnyVal {
+    
+    inline def setAutomaticUserConsentSettings(value: NullableOption[InboundOutboundPolicyConfiguration]): Self = StObject.set(x, "automaticUserConsentSettings", value.asInstanceOf[js.Any])
+    
+    inline def setAutomaticUserConsentSettingsNull: Self = StObject.set(x, "automaticUserConsentSettings", null)
+    
+    inline def setAutomaticUserConsentSettingsUndefined: Self = StObject.set(x, "automaticUserConsentSettings", js.undefined)
     
     inline def setB2bCollaborationInbound(value: NullableOption[CrossTenantAccessPolicyB2BSetting]): Self = StObject.set(x, "b2bCollaborationInbound", value.asInstanceOf[js.Any])
     

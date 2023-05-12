@@ -6,6 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ConditionalAccessExternalTenants extends StObject {
   
+  /**
+    * The membership kind. Possible values are: all, enumerated, unknownFutureValue. The enumerated member references an
+    * conditionalAccessEnumeratedExternalTenants object.
+    */
   var membershipKind: js.UndefOr[NullableOption[ConditionalAccessExternalTenantsMembershipKind]] = js.undefined
 }
 object ConditionalAccessExternalTenants {

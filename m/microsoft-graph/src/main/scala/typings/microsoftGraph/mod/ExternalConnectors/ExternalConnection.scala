@@ -10,6 +10,9 @@ trait ExternalConnection
   extends StObject
      with Entity {
   
+  // Collects configurable settings related to activities involving connector content.
+  var activitySettings: js.UndefOr[NullableOption[ActivitySettings]] = js.undefined
+  
   /**
     * Specifies additional application IDs that are allowed to manage the connection and to index content in the connection.
     * Optional.
@@ -34,6 +37,12 @@ trait ExternalConnection
   var schema: js.UndefOr[NullableOption[Schema]] = js.undefined
   
   /**
+    * The settings configuring the search experience for content in this connection, such as the display templates for search
+    * results.
+    */
+  var searchSettings: js.UndefOr[NullableOption[SearchSettings]] = js.undefined
+  
+  /**
     * Indicates the current state of the connection. Possible values are: draft, ready, obsolete, limitExceeded,
     * unknownFutureValue.
     */
@@ -48,6 +57,12 @@ object ExternalConnection {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: ExternalConnection] (val x: Self) extends AnyVal {
+    
+    inline def setActivitySettings(value: NullableOption[ActivitySettings]): Self = StObject.set(x, "activitySettings", value.asInstanceOf[js.Any])
+    
+    inline def setActivitySettingsNull: Self = StObject.set(x, "activitySettings", null)
+    
+    inline def setActivitySettingsUndefined: Self = StObject.set(x, "activitySettings", js.undefined)
     
     inline def setConfiguration(value: NullableOption[Configuration]): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
@@ -96,6 +111,12 @@ object ExternalConnection {
     inline def setSchemaNull: Self = StObject.set(x, "schema", null)
     
     inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+    
+    inline def setSearchSettings(value: NullableOption[SearchSettings]): Self = StObject.set(x, "searchSettings", value.asInstanceOf[js.Any])
+    
+    inline def setSearchSettingsNull: Self = StObject.set(x, "searchSettings", null)
+    
+    inline def setSearchSettingsUndefined: Self = StObject.set(x, "searchSettings", js.undefined)
     
     inline def setState(value: NullableOption[ConnectionState]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

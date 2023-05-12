@@ -58,6 +58,7 @@ import typings.microsoftGraph.mod.AutoRestartNotificationDismissalMethod
 import typings.microsoftGraph.mod.AutomaticRepliesStatus
 import typings.microsoftGraph.mod.AutomaticUpdateMode
 import typings.microsoftGraph.mod.BaseAuthenticationMethod
+import typings.microsoftGraph.mod.BinaryOperator
 import typings.microsoftGraph.mod.BitLockerEncryptionMethod
 import typings.microsoftGraph.mod.BodyType
 import typings.microsoftGraph.mod.BookingPriceType
@@ -189,6 +190,7 @@ import typings.microsoftGraph.mod.ExternalConnectors.ExternalItemContentType
 import typings.microsoftGraph.mod.ExternalConnectors.IdentityType
 import typings.microsoftGraph.mod.ExternalConnectors.Label
 import typings.microsoftGraph.mod.ExternalConnectors.PropertyType
+import typings.microsoftGraph.mod.ExternalConnectors.RuleOperation
 import typings.microsoftGraph.mod.ExternalEmailOtpState
 import typings.microsoftGraph.mod.FeatureTargetType
 import typings.microsoftGraph.mod.FederatedIdpMfaBehavior
@@ -1372,6 +1374,12 @@ object microsoftGraphStrings {
     extends StObject
        with AudioCodec
   inline def amrWide: amrWide = "amrWide".asInstanceOf[amrWide]
+  
+  @js.native
+  sealed trait and
+    extends StObject
+       with BinaryOperator
+  inline def and: and = "and".asInstanceOf[and]
   
   @js.native
   sealed trait android
@@ -3288,6 +3296,12 @@ object microsoftGraphStrings {
   inline def contactsOnly: contactsOnly = "contactsOnly".asInstanceOf[contactsOnly]
   
   @js.native
+  sealed trait contains
+    extends StObject
+       with RuleOperation
+  inline def contains: contains = "contains".asInstanceOf[contains]
+  
+  @js.native
   sealed trait contentDeletion
     extends StObject
        with SubjectRightsRequestStage
@@ -4587,6 +4601,12 @@ object microsoftGraphStrings {
   inline def equal: equal = "equal".asInstanceOf[equal]
   
   @js.native
+  sealed trait equals
+    extends StObject
+       with RuleOperation
+  inline def equals: equals = "equals".asInstanceOf[equals]
+  
+  @js.native
   sealed trait equipment
     extends StObject
        with UserPurpose
@@ -5646,6 +5666,7 @@ object microsoftGraphStrings {
   @js.native
   sealed trait greaterThan
     extends StObject
+       with RuleOperation
        with Win32LobAppRuleOperator
   inline def greaterThan: greaterThan = "greaterThan".asInstanceOf[greaterThan]
   
@@ -7143,6 +7164,7 @@ object microsoftGraphStrings {
   @js.native
   sealed trait lessThan
     extends StObject
+       with RuleOperation
        with Win32LobAppRuleOperator
   inline def lessThan: lessThan = "lessThan".asInstanceOf[lessThan]
   
@@ -8874,6 +8896,12 @@ object microsoftGraphStrings {
   inline def notContacted: notContacted = "notContacted".asInstanceOf[notContacted]
   
   @js.native
+  sealed trait notContains
+    extends StObject
+       with RuleOperation
+  inline def notContains: notContains = "notContains".asInstanceOf[notContains]
+  
+  @js.native
   sealed trait notDefined
     extends StObject
        with RiskDetectionTimingType
@@ -8903,6 +8931,12 @@ object microsoftGraphStrings {
     extends StObject
        with Win32LobAppRuleOperator
   inline def notEqual: notEqual = "notEqual".asInstanceOf[notEqual]
+  
+  @js.native
+  sealed trait notEquals
+    extends StObject
+       with RuleOperation
+  inline def notEquals: notEquals = "notEquals".asInstanceOf[notEquals]
   
   @js.native
   sealed trait notFlagged
@@ -9106,6 +9140,12 @@ object microsoftGraphStrings {
     extends StObject
        with ChatMessagePolicyViolationDlpActionTypes
   inline def notifySender: notifySender = "notifySender".asInstanceOf[notifySender]
+  
+  @js.native
+  sealed trait `null`
+    extends StObject
+       with RuleOperation
+  inline def `null`: `null` = "null".asInstanceOf[`null`]
   
   @js.native
   sealed trait number
@@ -9327,6 +9367,12 @@ object microsoftGraphStrings {
     extends StObject
        with AudioCodec
   inline def opus: opus = "opus".asInstanceOf[opus]
+  
+  @js.native
+  sealed trait or
+    extends StObject
+       with BinaryOperator
+  inline def or: or = "or".asInstanceOf[or]
   
   @js.native
   sealed trait organization
@@ -13300,6 +13346,12 @@ object microsoftGraphStrings {
   inline def startingAt: startingAt = "startingAt".asInstanceOf[startingAt]
   
   @js.native
+  sealed trait startsWith
+    extends StObject
+       with RuleOperation
+  inline def startsWith: startsWith = "startsWith".asInstanceOf[startsWith]
+  
+  @js.native
   sealed trait stayInformed
     extends StObject
        with ServiceUpdateCategory
@@ -14890,6 +14942,7 @@ object microsoftGraphStrings {
        with RoleEligibilityScheduleRequestFilterByCurrentUserOptions
        with RoutingMode
        with RoutingType
+       with RuleOperation
        with ScheduleChangeRequestActor
        with ScheduleChangeState
        with ScheduleEntityTheme

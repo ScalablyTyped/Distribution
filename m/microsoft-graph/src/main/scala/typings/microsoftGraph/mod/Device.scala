@@ -31,6 +31,9 @@ trait Device
     */
   var complianceExpirationDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // User-defined property set by Intune to automatically add devices to groups and simplify managing devices.
+  var deviceCategory: js.UndefOr[NullableOption[String]] = js.undefined
+  
   /**
     * Unique identifier set by Azure Device Registration Service at the time of registration. This is an alternate key that
     * can be used to reference the device object. Supports $filter (eq, ne, not, startsWith).
@@ -40,6 +43,9 @@ trait Device
   // For internal use only. Set to null.
   var deviceMetadata: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // Ownership of the device. This property is set by Intune. Possible values are: unknown, company, personal.
+  var deviceOwnership: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // For internal use only.
   var deviceVersion: js.UndefOr[NullableOption[Double]] = js.undefined
   
@@ -48,6 +54,12 @@ trait Device
     * values), $search, and $orderBy.
     */
   var displayName: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  /**
+    * Enrollment profile applied to the device. For example, Apple Device Enrollment Profile, Device enrollment - Corporate
+    * device identifiers, or Windows Autopilot profile name. This property is set by Intune.
+    */
+  var enrollmentProfileName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The collection of open extensions defined for the device. Read-only. Nullable.
   var extensions: js.UndefOr[NullableOption[js.Array[Extension]]] = js.undefined
@@ -116,6 +128,12 @@ trait Device
     */
   var registeredUsers: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
   
+  /**
+    * Date and time of when the device was registered. The timestamp type represents date and time information using ISO 8601
+    * format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+    */
+  var registrationDateTime: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // List of labels applied to the device by the system. Supports $filter (/$count eq 0, /$count ne 0).
   var systemLabels: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -163,6 +181,12 @@ object Device {
     
     inline def setComplianceExpirationDateTimeUndefined: Self = StObject.set(x, "complianceExpirationDateTime", js.undefined)
     
+    inline def setDeviceCategory(value: NullableOption[String]): Self = StObject.set(x, "deviceCategory", value.asInstanceOf[js.Any])
+    
+    inline def setDeviceCategoryNull: Self = StObject.set(x, "deviceCategory", null)
+    
+    inline def setDeviceCategoryUndefined: Self = StObject.set(x, "deviceCategory", js.undefined)
+    
     inline def setDeviceId(value: NullableOption[String]): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
     inline def setDeviceIdNull: Self = StObject.set(x, "deviceId", null)
@@ -175,6 +199,12 @@ object Device {
     
     inline def setDeviceMetadataUndefined: Self = StObject.set(x, "deviceMetadata", js.undefined)
     
+    inline def setDeviceOwnership(value: NullableOption[String]): Self = StObject.set(x, "deviceOwnership", value.asInstanceOf[js.Any])
+    
+    inline def setDeviceOwnershipNull: Self = StObject.set(x, "deviceOwnership", null)
+    
+    inline def setDeviceOwnershipUndefined: Self = StObject.set(x, "deviceOwnership", js.undefined)
+    
     inline def setDeviceVersion(value: NullableOption[Double]): Self = StObject.set(x, "deviceVersion", value.asInstanceOf[js.Any])
     
     inline def setDeviceVersionNull: Self = StObject.set(x, "deviceVersion", null)
@@ -186,6 +216,12 @@ object Device {
     inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
     inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    
+    inline def setEnrollmentProfileName(value: NullableOption[String]): Self = StObject.set(x, "enrollmentProfileName", value.asInstanceOf[js.Any])
+    
+    inline def setEnrollmentProfileNameNull: Self = StObject.set(x, "enrollmentProfileName", null)
+    
+    inline def setEnrollmentProfileNameUndefined: Self = StObject.set(x, "enrollmentProfileName", js.undefined)
     
     inline def setExtensions(value: NullableOption[js.Array[Extension]]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
@@ -272,6 +308,12 @@ object Device {
     inline def setRegisteredUsersUndefined: Self = StObject.set(x, "registeredUsers", js.undefined)
     
     inline def setRegisteredUsersVarargs(value: DirectoryObject*): Self = StObject.set(x, "registeredUsers", js.Array(value*))
+    
+    inline def setRegistrationDateTime(value: NullableOption[String]): Self = StObject.set(x, "registrationDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setRegistrationDateTimeNull: Self = StObject.set(x, "registrationDateTime", null)
+    
+    inline def setRegistrationDateTimeUndefined: Self = StObject.set(x, "registrationDateTime", js.undefined)
     
     inline def setSystemLabels(value: js.Array[String]): Self = StObject.set(x, "systemLabels", value.asInstanceOf[js.Any])
     

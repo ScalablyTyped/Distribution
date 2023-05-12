@@ -11,10 +11,10 @@ trait AttendanceRecord
   // List of time periods between joining and leaving a meeting.
   var attendanceIntervals: js.UndefOr[NullableOption[js.Array[AttendanceInterval]]] = js.undefined
   
-  // Email address of the user associated with this atttendance record.
+  // Email address of the user associated with this attendance record.
   var emailAddress: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Identity of the user associated with this atttendance record.
+  // Identity of the user associated with this attendance record.
   var identity: js.UndefOr[NullableOption[Identity]] = js.undefined
   
   // Role of the attendee. Possible values are: None, Attendee, Presenter, and Organizer.
